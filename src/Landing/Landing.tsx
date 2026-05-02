@@ -1,6 +1,12 @@
 import style from "./Landing.module.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Landing() {
+  const navigate = useNavigate();
+
+  const handleIniciarSesion = () => {
+    navigate("/home");
+  };
   return (
     <div className={style.landing}>
       <div className={style.header}>
@@ -33,7 +39,11 @@ export default function Landing() {
             required
           />
 
-          <button className={style.iniciar_sesion} type="submit">
+          <button
+            className={style.iniciar_sesion}
+            type="submit"
+            onClick={handleIniciarSesion}
+          >
             Iniciar Sesión
           </button>
           <button className={style.has_olvidado_tu_contraseña} type="submit">
