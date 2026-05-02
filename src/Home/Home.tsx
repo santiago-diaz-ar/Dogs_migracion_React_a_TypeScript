@@ -1,8 +1,11 @@
 import style from "./Home.module.css";
 import { perros } from "../Arrays_De_Pruebas/Arrays_De_Pruebas";
 import type { Perro } from "../Arrays_De_Pruebas/Arrays_De_Pruebas";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate();
+
   return (
     <div className={style.home}>
       <div className={style.titulo}>
@@ -27,6 +30,9 @@ export default function Home() {
                 src={perro.imagen}
                 alt={perro.nombre}
                 className={style.ImgTargeta}
+                onClick={() =>
+                  navigate(`/detail/${perro.id}`, { state: perro })
+                }
               />
               <h3>{perro.nombre}</h3>
             </div>
