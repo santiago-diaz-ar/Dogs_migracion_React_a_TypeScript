@@ -9,14 +9,14 @@ export default function Home() {
         <div className={style.tituloUno}>
           <img className={style.Logo} alt="logo" />
           <input type="text" placeholder="Buscar" className={style.Buscar} />
-          <button type="submit">Buscar</button>
-          <div className={style.Descuento}>10% de descuento Mes de Marzo</div>
+          <button type="submit">Buscar🔍</button>
+          <div className={style.Descuento}>💰Carro de Compras💰</div>
         </div>
 
         <div className={style.TituloDos}>
           <div>filtro</div>
-          <div>oferta</div>
-          <div>contactanos</div>
+          <div>oferta 🔝</div>
+          <div>Javier Santiago Diaz Arcila🙇</div>
         </div>
       </div>
       <div className={style.cuerpo}>
