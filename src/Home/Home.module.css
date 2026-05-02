@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  border: 3px solid red;
+  /*  border: 3px solid red; */
   margin: 10px;
 }
 .titulo {
   position: sticky;
   top: 0;
   z-index: 10;
-  border: 8px solid blue;
+  /* border: 8px solid blue; */
   width: 100%;
   min-height: 110px;
   display: flex;
@@ -19,7 +19,7 @@
   flex-direction: column;
 }
 .tituloUno {
-  border: 3px solid cyan;
+  /* border: 3px solid cyan; */
   display: flex;
   width: 100%;
   margin: 0.3rem;
@@ -45,7 +45,7 @@
 }
 
 .TituloDos {
-  border: 3px solid magenta;
+  /* border: 3px solid magenta; */
   display: flex;
   width: 100%;
   justify-content: space-around;
@@ -53,12 +53,26 @@
 .cuerpo {
   flex: 1 1 auto;
   overflow-y: auto;
-  border: 3px solid greenyellow;
+  /* border: 3px solid greenyellow; */
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  .ImgTargeta {
+    width: 17rem;
+    height: 20rem;
+    border-radius: 0.3rem;
+    margin: 1rem;
+  }
 }
 .footer {
   border: 3px solid violet;
   width: 100%;
+  display: flex;
   flex: 0 0 auto;
   min-height: 4rem;
+  justify-content: space-around;
+  align-items: center;
 }
