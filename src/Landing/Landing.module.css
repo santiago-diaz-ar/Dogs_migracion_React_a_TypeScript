@@ -1,0 +1,83 @@
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* border: 3px solid #ff0000; */
+}
+.content {
+  display: flex;
+  /* border: 3px solid #00ff00; */
+  width: 100%;
+  height: 80%;
+}
+.imagen {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 3px solid yellow; */
+  background-image: url("../assets/besos.jpg"); /* Ruta a tu imagen */
+  background-size: cover; /* Para que la imagen cubra todo el espacio */
+  background-position: center; /* Para centrar la imagen */
+  display: block;
+}
+
+.Form {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* border: 3px solid #ff00ff; */
+}
+.correo_electronico_password {
+  margin: 0.3rem;
+  width: 25rem;
+  height: 2.2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ff00ff;
+}
+.iniciar_sesion {
+  cursor: pointer;
+  margin-top: 0.5rem;
+  width: 25rem;
+  height: 2.2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ff00ff;
+}
+.has_olvidado_tu_contraseña {
+  cursor: pointer;
+  margin-top: 0.3rem;
+  width: 25rem;
+  height: 2.2rem;
+  border-radius: 0.5rem;
+  background: transparent; /* Quita el color de fondo gris */
+  border: none; /* Quita el borde */
+  color: white; /* El color de las letras (ajústalo al que prefieras) */
+  padding: 0; /* Quita el espacio interno si quieres que sea exacto al texto */
+  cursor: pointer; /* Hace que aparezca la "manito" al pasar el ratón */
+  font-size: 14px; /* Ajusta el tamaño según tu diseño */
+  text-decoration: none;
+}
+.has_olvidado_tu_contraseña:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+.crear_cuenta {
+  cursor: pointer;
+}
+.crear_cuenta:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+.google {
+  cursor: pointer;
+}
+.google:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
